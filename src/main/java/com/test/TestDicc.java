@@ -44,6 +44,7 @@ public class TestDicc {
 		dic.addPalabra("maquiavélico", "Astuto y engañoso.");
 		
 		assertEquals(dic.palabrasEmpiezanPor("maqu").size(), 2);
+		assertEquals(dic.palabrasEmpiezanPor("maqu").get(0), "maquiavélico");
 		assertEquals(dic.palabrasEmpiezanPor("hi").size(), 0);
 		
 	}
