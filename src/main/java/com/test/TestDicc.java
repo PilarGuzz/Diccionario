@@ -22,6 +22,7 @@ public class TestDicc {
 		assertTrue(!dic.buscarPalabra("máquina").isEmpty());
 		assertEquals(dic.buscarPalabra("máquina").size(), 2);
 	}
+	
 
 	
 	@Test
@@ -36,15 +37,15 @@ public class TestDicc {
 		assertNull(dic.buscarPalabra("máquina"));
 	}
 	
-//	@Test
-//	void testListarPalabras() {
-//		Diccionario dic = new Diccionario();
-//		dic.addPalabra("maquinar", "Urdir, tramar algo oculta y artificiosamente.");
-//		dic.addPalabra("maquiavélico", "Astuto y engañoso.");
-//		
-//		assertEquals(dic.palabrasEmpiezanPor("maqu").size(), 2);
-//		assertEquals(dic.palabrasEmpiezanPor("hi").size(), 0);
-//		
-//	}
+	@Test
+	void testListarPalabras() {
+		Diccionario dic = new Diccionario();
+		dic.addPalabra("maquinar", "Urdir, tramar algo oculta y artificiosamente.");
+		dic.addPalabra("maquiavélico", "Astuto y engañoso.");
+		
+		assertEquals(dic.palabrasEmpiezanPor("maqu").size(), 2);
+		assertEquals(dic.palabrasEmpiezanPor("hi").size(), 0);
+		
+	}
 
 }
